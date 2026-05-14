@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> ePortfolio - Black Box Investigation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<nav>
+  <ul>
+      <li> <a href="index.html"> HOME </a> </li>
+      <li> <a href="https://esumsnh.net/" target="_blank"> ESUMS WEBSITE </a> </li>
+      <li> <a href="about.html"> ABOUT PAGE </a> </li>
+      <li> BLACK BOX INVESTIGATION </li>
+  </ul>
+</nav>
+
+
+<div class="main">
+
+<h1>ePortfolio - Black Box Investigation</h1>
+
+<h3> Process & Steps </h3>
+<ol>
+  <li> Observation & Testing </li>
+  <li> 2D Design & Illustration/Brainstorming </li>
+  <li> Construction & Testing </li>
+  <li> 2D Animation </li>
+  <li> 3D Modeling </li>
+  <li> 3D Animation </li>
+</ol>
+<p1> (Photography occurred during all steps) </p1>
+
+<h2> Introduction / Background Information </h2>
+<p> 	Imagine a box in a classroom with random numbers listed on a board next to it. A student pours a cup full of water into a funnel at the top of the box. From a small tube exiting the side of the box a small sum of water comes out. People scramble to add more numbers to the table on the board. The process is repeated over and over again. Sometimes no water exits the box; sometimes more exits than enters. This is “the Black Box.” Into a funnel at the top a sum of water enters the box; a little while later water exits through a different tube. The amount of water exiting varies from none all the way to over double the imputed amount of water. But why? What pattern is there in the numbers? Most importantly what is inside the Black Box? </p>
+
+<h2> Claim & Testing </h2>
+<h3> Evidence </h3>
+<p> 	Despite testing and modeling our results were inconclusive and unhelpful in determining the contests and inner working of the Black Box. To test how the box functioned we measured out a sum of water before inputting it into the funnel and measuring the volume of water that was released in comparison to the volume of water that entered. After running numerous tests collectively as a class on the original Black Box, a rough pattern was observed over the course of over 50 total trials. The Black Box operated in a pattern generally of no or little water released followed by a large sum of water greater than the imputed amount released within a few trials later. For example, in one trial 1000mL of water was input, but only 160mL of water was released. The next trial, 1000mL were again input with 1907mL of water released. In another set of trials, 1000mL were input with 1350mL of water output followed by 1000mL again input with only 7mL of water exiting. The next trial, with 1000mL of input water, 1700mL was released. </p>
+
+<h3> Testing Procedure </h3>
+<ol>
+  <li> Pour a measured sum of water into the funnel at the top of the Black Box </li>
+  <li> Collect the water that exits the box </li>
+  <li> Measure the amount of water that exited the box in step 2 </li>
+  <li> Compare the amount of water that entered and exited the box </li>
+  <li> Record the observed data </li>
+  <li> Repeat the previous steps to have multiple trials of testing </li>
+</ol>
+
+<img src="images/testing_bts.JPG" alt="group-mate testing our model" width="500px">
+
+
+<h3> Sample of Testing Data </h3> 
+<h4> Trials 1-18 </h4>
+<table>
+  <tr>
+    <th>Input (mL)</th>
+    <th>Output (mL)</th>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> 0 </td>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> 0 </td>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> N/A (Leakage) </td>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> 370 </td>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> 1710 </td>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> 960 </td>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> 1000 </td>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> 980 </td>
+  </tr>
+  <tr>
+    <td> 100 </td>
+    <td> 1940 </td>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> 990 </td>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> 942 </td>
+  </tr>
+  <tr>
+    <td> 120 </td>
+    <td> 150 </td>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> 1000 </td>
+  </tr>
+  <tr>
+    <td> 850 </td>
+    <td> 850 </td>
+  </tr>
+  <tr>
+    <td> 1100 </td>
+    <td> 150 </td>
+  </tr>
+  <tr>
+    <td> 130 </td>
+    <td> 0 </td>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> 1510 </td>
+  </tr>
+  <tr>
+    <td> 1000 </td>
+    <td> 1730 </td>
+  </tr>
+</table>
+
+<h3> Reasoning </h3>
+<p>The quantitative data would be our only window into how the Black Box functioned. Since we had limited information given to us, our best chance at determining the inner workings would be to build a model and see if we could recreate the pattern presented by the original Black Box. The height and positions of the funnel and pipe suggest the box relies on gravity to function. This suggests a process where a sum of water is stored inside the Black Box in some manner before being  released once more water is added through a series of buckets, pipes, and siphons. However, this alone is not conclusive enough to derive a specific design. A set of data that could give an exact answer would be if the pattern were exact and well defined. In contrast the pattern of the provided data is sporadic; the pattern can be visible in short succession in some places (such as in the provided examples) or have one sequence of the pattern stretched across many trials (such as many adjacent trials of no water output before a single trial of large output). A clear pattern, for example, that indicates an obvious design would be if the input and output water was always equal; indicating a single tube traveling from the funnel to the final pipe. </p>
+
+<img src="images/BlackBoxAnimation10-20-25.gif" alt="animated diagram of my 'Black Box' model" width="800px">
+
+<h3> Physical Model Building & Testing </h3>
+
+<img src="images/construction_3.JPG" alt="group-mate building our model" width="265px">
+<img class="no_border" src="images/construction_bts1.JPG" alt="me building our model" width="265px">
+<img class="no_border" src="images/construction_bts4.JPG" alt="group-mate building our model" width="265px">
+
+<p> 	After observing the functions of the original Black Box, we constructed our own version of the Black box. In this model a system of siphons and buckets would attempt to replicate the pattern of the original Black Box. To construct our model we took a large cardboard box and inside placed buckets with holes in them for tubes and a funnel at the top. Next, we took plastic tubes and joined them with the buckets and funnel so that they ran through the box in a system of siphons and other tubes. We used cardboard cut into different configurations to support various portions such as the buckets and tubes. While testing this model, our results were, again, inconclusive. Before the water even reached the first bucket, the tubes leaked, and the majority of the water was lost before effective could occur. What water remained would then be lost to a second leak at the joint at the conjunction of the first bucket and the first siphon. This labeled our model as fully dysfunctional. Had the model worked it could’ve served to confirm or deny our hypothesis on the contents of the Black Box. Given that our conclusions must be based on the patterns in data points and quantitative values from the original Black Box, a model was our best choice to visualize and confirm our hypothesis as already mentioned. There’s a plethora of things that are only observable in numerical matters. However, a model can allow you to explore possibilities in a visual representation even when based on limited information. Models serve to simplify complex constructs in a way that allows them to be dissected and explained. Specifically this model, as previously mentioned, was made to be an estimate of the Black Box’s inner workings. If correct, our results should've matched those of the original Black Box. Since there were structural issues with our model, we don’t know if the results would’ve been the same or different from the original Black Box’s. If our design had functioned without leaks, we could’ve determined if our model’s contents aligned with those of the Black Box. Even if our results occurred in a different pattern from the Black Box, we could’ve determined various components that do not occur in the Black Box. However, we weren’t even able to determine this because of how severe the issues with our box were. This left us with still no idea on the accuracy of our hypothesis and the inner workings of the Black Box itself. </p>
+
+<h3> Materials of Construction </h3>
+<ul>
+  <li> Cardboard Box </li>
+  <li> Extra Cardboard </li>
+  <li> Plastic Buckets </li>
+  <li> Flexible Plastic Tubes </li>
+  <li> Hot Glue </li>
+  <li> Various Types of Tape </li>
+  <li> Plastic Funnel </li>
+</ul>
+
+<img src="images/construction_bts2.JPG" alt="me building our model" width="500px">
+
+<h2> Artistic Development </h2>
+
+<h3> Photography </h3>
+<p> 	During various stages of our process we documented the work that went into it with photography. We took photos using a digital camera of the testing of the original black box, the brainstorming of our hypothesis, and the building of our model. We explored basic photography principles to increase visual interest. One of these principles was the rule of thirds to establish visual importance of subjects. The rule of thirds is the concept that important subjects should lie on the vertex of lines separating the image into a 3-by-3 grid. In addition, we worked with framing, the distance between subject and camera, to portray a difference in focus between location, action, and physical subject. The third photography principle we used was angle, the angle at which a subject is viewed, to convey mood. The combination of these three concepts were used throughout much of this project. </p>
+
+<h3> 2D Design & Animation </h3>
+<p>	Another artistic tool we used was 2D design and animation in <a href="https://www.adobe.com/products/photoshop/landpa.html?sdid=NC5FRF5H&mv=search&mv2=paidsearch&ef_id=Cj0KCQiAxJXJBhD_ARIsAH_JGjjKy010aWvgTnc03uPUsqSUCX6J-gc5is078S5uD_5mshJhlG8CVq8aAgi7EALw_wcB:G:s&s_kwcid=AL!3085!3!714745362176!e!!g!!adobe%20photoshop!1712238394!67643541820&mv=search&gad_source=1&gad_campaignid=1712238394&gbraid=0AAAAAD5r4AwQbuqO_C6prw6PYyWVxByaT&gclid=Cj0KCQiAxJXJBhD_ARIsAH_JGjjKy010aWvgTnc03uPUsqSUCX6J-gc5is078S5uD_5mshJhlG8CVq8aAgi7EALw_wcB" target="_blank"> Adobe Photoshop</a>. Using digital software we were able to create a diagram of our hypothesis of the contents of the Black Box. This software was where our initial brainstorming occurred. In this software we drew out a sketch of our hypothesis using a wacom stylist and tablet connected to laptops with the software installed. In Photoshop we used different “brushes” to draw our diagram indicating different materials and differentiating between separate components. We also used text and color to differentiate things and add labels to explain our drawing. Additionally, in photoshop we used frame-by-frame animation to create a video explaining how water would travel through our model with text included in explanation. To animate this we would draw one frame at a time changing whatever attributes we wanted to change between frames and keeping certain attributes constant as well. To practice we also did other drawings and animations in photoshop as shown in the photos below.</p>
+
+<img src="images/photoshop_diagram_bts.png" alt="screenshot of photoshop animating my diagram" width="420px">
+<img class="no_border" src="images/photoshop_bts2.JPG" alt="me drawing my diagram in photoshop" width="380px">
+
+<h3> 3D Modeling </h3>
+
+<img src="images/modeling_bts.png" alt="screenshot of 3D modeling in MAYA" width="370px">
+<img class="no_border" src="images/modeling_bts2.png" alt="screenshot of 3D modeling in MAYA" width="440px">
+
+<p> 	The second digital software we used was the 3D modeling program, <a href="https://www.autodesk.com/products/maya/overview?mktvar002=7313122|SEM|15994942310|134216357962|kwd-1971040707&utm_source=GGL&utm_medium=SEM&utm_campaign=GGL_M-E_All-Products_AMER_US_eComm_SEM_BR_New_EX_0067_7313122&utm_id=7313122&&utm_term=kwd-1971040707&gclsrc=aw.ds&&ef_id=Cj0KCQiAxJXJBhD_ARIsAH_JGjhuhmU-nQIT1TieSH3cvoaRoiXkSZI0je6PymTleg69LkagqWYWXzoaAiEzEALw_wcB:G:s&s_kwcid=AL!11172!3!576638500774!e!!g!!autodesk%20maya!15994942310!134216357962&mkwid=s|pcrid|576638500774|pkw|autodesk%20maya|pmt|e|pdv|c|slid||pgrid|134216357962|ptaid|kwd-1971040707|pid|&utm_medium=cpc&utm_source=google&utm_campaign=&utm_term=autodesk%20maya&utm_content=s|pcrid|576638500774|pkw|autodesk%20maya|pmt|e|pdv|c|slid||pgrid|134216357962|ptaid|kwd-1971040707|&gad_source=1&gad_campaignid=15994942310&gbraid=0AAAAADx7pE3I2cqf12Klq__FqR0M1kx__&gclid=Cj0KCQiAxJXJBhD_ARIsAH_JGjhuhmU-nQIT1TieSH3cvoaRoiXkSZI0je6PymTleg69LkagqWYWXzoaAiEzEALw_wcB" target="_blank">MAYA</a>. In this program we started by building a 3D representation of our physical model similarly to how we did in Photoshop. In this software, all components start as basic 3D shapes, such as cubes, cylinders, and cones, that are then manipulated to form more complex things. For example, the buckets of our model started off as cylinders that then were resized to be larger and had faces deleted in order to hollow them out. Then the faces would be manipulated to create the shape that we wanted using tools such as “connect,” “multi-cut,” and basic transformation commands, before the shape is extruded and beveled to create a bucket like shape. Some similar process of manipulation occurred for every component from the box itself to the arrows navigating it. Once these objects are built, they’re placed in the model using basic transformation commands such as translate, rotate, and scale. After these components were built, “materials” were created and applied to the items with different attributes such as transmission, creating the effect of transparency, metal-ness, displaying metallic and reflectiveness, and color. We also used MAYA’s lighting controls in order to add a light source to our model and render it more realistically. </p>
+
+<img src="images/materials_bts.png" alt="screenshot of 'material' rendering in MAYA" width="850px">
+
+<h3> 3D Animation </h3>
+<p> The next step was key-frame animation. In key-frame animation, we first “keyed” a frame and position of an object before moving that item in a later frame and “keying” it again. This would mean that when the animation was played the object would automatically move over time from its first position in the first “keyed” frame to its second in the second “keyed” frame. The same process could be applied to a custom “camera’ in order to animate how the model would be viewed as well. To help with animation more complex shapes, such as a hand, we “rigged” certain more complex objects. In “rigging” you create “joints” that act as the bones of the object. You then connect those “joints” to corresponding parts of the item you’d like to animate and when the “joint” is moved the corresponding part of the item will move as well. This allows you to animate one part of a single object separately rather than needing to move the whole object. The final special effects of this was with a water simulation to show how water would interact and flow through the created 3D model. To do this we first created a cylinder for the water to “come from” and then used a bifrost graph to set how the water would interact with certain components, such as which components it would “collide” with and what component the water would come from. </p>
+
+<img src="images/animation_bts.png" alt="screenshot from 3D animation in MAYA" width="370px">
+<img class="no_border" src="images/animation_bts2.png" alt="screenshot from 3D animation in MAYA" width="450px">
+
+<div> </div>
+
+<img src="images/riggin_bts.png" alt="screenshot of rigging in MAYA" width="350px">
+<img class="no_border" src="images/bifrost_bts.png" alt="screenshot of the 'bifrost graph' determining water simulation" width="460px">
+
+<h2> 21st Century Skill Competency </h2>
+<p>	One “21st century competency” I believe that I portrayed in this project was “communication and collaboration.” For the entirety of building the physical model I worked with other people in a group. During the aspects of this project that required working with technology I also helped my group-mates with technology issues and troubleshooting. For example, while working in the 3D modeling software I helped my group-mates troubleshoot issues with modeling and animation. Throughout this project we worked effectively and productively together and all managed to produce something of rather high quality. </p>
+
+</body>
+
+</div>
+
+</html>
